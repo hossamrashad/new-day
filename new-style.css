@@ -1,0 +1,36 @@
+.error-content::before {
+  background: rgba(0, 0, 0, 0) url(../images/about/bg-arrow.png) no-repeat
+    scroll center center;
+  content: "";
+  height: 90px;
+  right: 0;
+  position: absolute;
+  top: 160px;
+  width: 43px;
+  transform: rotate(179deg);
+}
+.main-nav .main-menu > li.menu-item-has-children > .sub-menu {
+  right: 0;
+}
+.main-nav .main-menu .sub-menu li.menu-item-has-children > .sub-menu {
+  right: 100%;
+}
+.main-nav .main-menu .sub-menu li.menu-item-has-children > a::after {
+  content: "\f104";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 200px !important;
+  font-size: 15px;
+}
+.team-slider .owl-controls {
+  left: -30px !important;
+}
+.our-mission-thumb {
+  left: 0;
+}
+.event-tab-list {
+  right: 30px !important;
+}
+.event-tab-content {
+  padding-right: 215px !important;
+}
