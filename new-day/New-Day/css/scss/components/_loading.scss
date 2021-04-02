@@ -1,0 +1,173 @@
+// Start Div Loading
+
+// <div class="loading">
+//  <div class="spinner"></div>
+// </div>
+
+.loading {
+  background: #222;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+// End Loading
+
+// <div id="preloader">
+//   <div class="preloader-area">
+//     <div class="preloader-box">
+//       <div class="preloader"></div>
+//     </div>
+//   </div>
+// </div>
+
+// PERLOADER
+#preloader {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: preloader_6 5s infinite linear;
+  animation: preloader_6 5s infinite linear;
+  background: #fff;
+  display: block;
+  text-align: center;
+  position: fixed;
+  z-index: 999999999;
+  .preloader-area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    > .preloader-box {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: inline-block;
+      width: 186px;
+      > div {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: #1abc9c;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        font-family: Verdana;
+        font-size: 20px;
+        color: #fff;
+      }
+      .preloader {
+        -webkit-animation: preloader;
+        animation: preloader;
+        -webkit-animation-duration: 1500ms;
+        animation-duration: 1500ms;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        background-color: #1abc9c;
+        border-radius: 2px;
+        box-shadow: -2em 0 0 #1abc9c, 2em 0 0 #1abc9c, 0 -2em 0 #1abc9c,
+          0 2em 0 #1abc9c;
+        height: 1.5em;
+        margin: 4em;
+        width: 1.5em;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes preloader {
+  0% {
+    box-shadow: -2em 0 0 #1abc9c, 0 -2em 0 rgba(163, 189, 227, 0.75),
+      2em 0 0 rgba(163, 189, 227, 0.5), 0 2em 0 rgba(163, 189, 227, 0.25);
+  }
+  25% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.25), 0 -2em 0 #1abc9c,
+      2em 0 0 rgba(163, 189, 227, 0.75), 0 2em 0 rgba(163, 189, 227, 0.5);
+  }
+  50% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.5),
+      0 -2em 0 rgba(163, 189, 227, 0.25), 2em 0 0 #1abc9c,
+      0 2em 0 rgba(163, 189, 227, 0.75);
+  }
+  75% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.75),
+      0 -2em 0 rgba(163, 189, 227, 0.5), 2em 0 0 rgba(163, 189, 227, 0.25),
+      0 2em 0 #1abc9c;
+  }
+  100% {
+    box-shadow: -2em 0 0 #1abc9c, 0 -2em 0 rgba(163, 189, 227, 0.75),
+      2em 0 0 rgba(163, 189, 227, 0.5), 0 2em 0 rgba(163, 189, 227, 0.25);
+  }
+}
+@keyframes preloader {
+  0% {
+    box-shadow: -2em 0 0 #1abc9c, 0 -2em 0 rgba(163, 189, 227, 0.75),
+      2em 0 0 rgba(163, 189, 227, 0.5), 0 2em 0 rgba(163, 189, 227, 0.25);
+  }
+  25% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.25), 0 -2em 0 #1abc9c,
+      2em 0 0 rgba(163, 189, 227, 0.75), 0 2em 0 rgba(163, 189, 227, 0.5);
+  }
+  50% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.5),
+      0 -2em 0 rgba(163, 189, 227, 0.25), 2em 0 0 #1abc9c,
+      0 2em 0 rgba(163, 189, 227, 0.75);
+  }
+  75% {
+    box-shadow: -2em 0 0 rgba(163, 189, 227, 0.75),
+      0 -2em 0 rgba(163, 189, 227, 0.5), 2em 0 0 rgba(163, 189, 227, 0.25),
+      0 2em 0 #1abc9c;
+  }
+  100% {
+    box-shadow: -2em 0 0 #1abc9c, 0 -2em 0 rgba(163, 189, 227, 0.75),
+      2em 0 0 rgba(163, 189, 227, 0.5), 0 2em 0 rgba(163, 189, 227, 0.25);
+  }
+}

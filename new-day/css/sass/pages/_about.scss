@@ -1,0 +1,256 @@
+// slider header
+.team-slider {
+  margin-top: 43px;
+  position: relative;
+  direction: ltr;
+  // h2 class slider
+  .title {
+    margin-bottom: 25px;
+    direction: rtl;
+    color: $black-color;
+  }
+  // div have row .inner-team-slider
+  .inner-team-slider {
+    border: 2px solid $second-color;
+    padding: 30px;
+    @include borderRadius(15px);
+    @include transition(0.5s);
+    @include hover {
+      @include borderRadius(0px);
+    }
+    // div  col-4 team-slider-thumb
+    .team-slider-thumb {
+      background: #262626 none repeat scroll 0 0;
+      overflow: hidden;
+      text-align: center;
+      a {
+        img {
+          @include transition(0.5s);
+          @include hover {
+            transform: scale(1.15);
+          }
+        }
+      }
+    }
+    // ul team-slider-info
+    .team-slider-info {
+      color: $text-color;
+      list-style: outside none none;
+      margin: 25px 0 0;
+      padding: 0;
+      direction: $dir-rtl;
+      // li tel-info
+      .tel-info {
+        background: transparent url("../images/about/icon-phone.png") no-repeat
+          scroll right top;
+        a {
+          color: $text-color;
+          @include transition(0.5s);
+          @include hover {
+            color: $black-color;
+          }
+        }
+      }
+      // li email-info
+      .email-info {
+        background: transparent url("../images/about/icon-email.png") no-repeat
+          scroll right top;
+        a {
+          color: $text-color;
+          @include transition(0.5s);
+          @include hover {
+            color: $black-color;
+          }
+        }
+      }
+    }
+    // ul team-social
+    .team-social {
+      list-style: outside none none;
+      margin: 20px 0 0;
+      padding: 0;
+      /* add */
+      direction: $dir-rtl;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          height: 36px;
+          margin-right: 5px;
+          width: 36px;
+          text-align: center;
+          line-height: 36px;
+          color: #fff;
+        }
+        .fb-team {
+          background: #183f97;
+          @include transition(0.5s);
+          @include hover {
+            @include borderRadius(50%);
+          }
+        }
+        .tw-team {
+          background: #00cff4;
+          @include transition(0.5s);
+          @include hover {
+            @include borderRadius(50%);
+          }
+        }
+        a.li-team {
+          background: #02759b;
+          @include transition(0.5s);
+          @include hover {
+            @include borderRadius(50%);
+          }
+        }
+        .pi-team {
+          background: #ef3b33;
+          @include transition(0.5s);
+          @include hover {
+            @include borderRadius(50%);
+          }
+        }
+      }
+    }
+  }
+  // div col-8
+  //
+  .dirrtl {
+    .team-slider-content {
+      span {
+        color: $second-color;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: $font-page;
+        margin: 13px 0 9px;
+        text-transform: uppercase;
+        color: $black-color;
+      }
+      p {
+        color: $text-color;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .owl-controls {
+    position: absolute;
+    top: -80px;
+    // right: -30px;
+    left: -30px !important;
+    .owl-buttons > div {
+      color: $black-color;
+      font-size: $font-page + 5;
+    }
+  }
+}
+// start our-mission
+.our-mission {
+  margin-top: 42px;
+  position: relative;
+  // h2 title
+  .title {
+    margin-bottom: 5px;
+    color: $black-color;
+  }
+  // p intro-mission
+  .intro-mission {
+    color: $text-color;
+    max-width: 560px;
+    position: relative;
+    z-index: 9;
+  }
+  // div have row
+  .content-our-mission {
+    background: #262626 none repeat scroll 0 0;
+    margin-top: 25px;
+    // old max-width: 630px;
+    max-width: 737px;
+    padding: 30px 30px 10px;
+    position: relative;
+    &::after {
+      background: #262626 none repeat scroll 0 0;
+      content: "";
+      height: 100%;
+      position: absolute;
+      // old right: -300px;
+      left: -300px;
+      top: 0;
+      width: 300px;
+    }
+    // div list-our-mission
+    .list-our-mission {
+      position: relative;
+      z-index: 9;
+      // div inside col-6
+      .our-mission-box {
+        margin-bottom: 25px;
+        h2 {
+          font-size: 60px;
+          font-weight: 700;
+          margin: 0;
+          sup {
+            color: $second-color;
+            font-size: 30px;
+            left: 0;
+            top: -22px;
+          }
+        }
+        p {
+          font-style: italic;
+          // add
+          color: $white-color;
+        }
+      }
+    }
+  }
+  // img our-mission-thumb
+  .our-mission-thumb {
+    bottom: 0;
+    position: absolute;
+    // old right: 0;
+    left: 0px;
+    // add
+    height: 74%;
+    width: 30%;
+  }
+}
+/* start about-skill */
+.about-skill {
+  margin-top: 42px;
+  // h2 title
+  .title {
+    margin-bottom: 7px;
+    // add
+    color: $black-color;
+  }
+  p {
+    color: #666;
+  }
+  // div list-skill
+  .list-skill {
+    margin-top: 43px;
+    text-align: center;
+    // div item-skill
+    .item-skill {
+      // div  .chart-skill
+      .chart-skill {
+        .circles-wrp {
+          .circles-integer {
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+            // add
+            color: $text-color;
+          }
+        }
+      }
+    }
+    h3 {
+      color: $text-color;
+      font-size: $font-page;
+      font-weight: 700;
+    }
+  }
+}

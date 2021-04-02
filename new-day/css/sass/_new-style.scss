@@ -1,0 +1,25 @@
+.error-content::before {
+  background: rgba(0, 0, 0, 0) url(images/about/bg-arrow.png) no-repeat scroll
+    center center;
+  content: "";
+  height: 90px;
+  right: 0;
+  position: absolute;
+  top: 160px;
+  width: 43px;
+  transform: rotate(179deg);
+}
+// copy to header
+/*
+.main-nav .main-menu > li.menu-item-has-children > .sub-menu {
+  right: 0;
+}
+*/
+
+.main-nav .main-menu .sub-menu li.menu-item-has-children > a::after {
+  content: "\f104";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 200px !important;
+  font-size: 15px;
+}

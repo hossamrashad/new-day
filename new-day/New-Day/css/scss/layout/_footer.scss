@@ -1,0 +1,58 @@
+.footer {
+    background-color: $cavarley-color;
+    height: 300px;
+    padding: 20px 0px;
+    .item-left {
+        .box {
+            font-size: $font-page + 4;
+            color: #fff;
+            img {
+                width: 30%;
+                vertical-align: text-bottom;
+                padding-right: 10px;
+            }
+        }
+        ul {
+            margin-top: 20px;
+            li {
+                display: block;
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .footer-icon {
+        position: relative;
+        height: 100%;
+        ul {
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            li {
+                margin: 0px 5px;
+                > .fa {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 20px;
+                    text-align: center;
+                    background-color: #fff;
+                    border: 1px solid transparent;
+                    @include borderRadius(50%);
+                    @include transition(0.5s);
+                    @include hover {
+                        background-color: transparent;
+                        border: 1px solid map-get($colors, 1);
+                        color: map-get($colors, 1);
+                    }
+                }
+            }
+        }
+    }
+    .hr-footer {
+        height: 1px;
+        background-color: #fff;
+    }
+}
